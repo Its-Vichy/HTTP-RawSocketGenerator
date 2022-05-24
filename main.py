@@ -13,7 +13,6 @@ class Server(threading.Thread):
             conn, _ = s.accept()
             data = conn.recv(1024)
             print(f'[SOCKET] {data}')
-            break
 
 if __name__ == '__main__':
     Server().start()
